@@ -9,6 +9,9 @@ console.log(b);
 
 // time comment
 
+console.log('This is new project')
+
+
 let newapi = 23; // new branch
 const ol = 23;
 // const obj = {
