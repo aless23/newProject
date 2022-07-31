@@ -1,5 +1,6 @@
 "use strict";
 
+let console = 'change1';
 
 //Пример использования объекта в ООП
 
