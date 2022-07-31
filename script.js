@@ -12,6 +12,8 @@ console.dir([1, 2, 3,]);
 console.log('change user2');
 
 
+console.log('change second for user 2'); //Изменения вторые для 2=го пользователя
+
 const car = {
 	type: 'sport',
 	speed: 340,
