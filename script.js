@@ -9,7 +9,7 @@ let strObj = new String (str);
 // console.log(typeof(strObj));
 console.dir([1, 2, 3,]);
 
-
+console.log('change user2');
 
 
 const car = {
