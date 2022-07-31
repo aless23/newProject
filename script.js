@@ -11,7 +11,7 @@ let strObj = new String (str);
 console.dir([1, 2, 3,]);
 
 
-
+const newChanges = 2; // Второй коммит для первого пользователя
 
 const car = {
 	type: 'sport',
