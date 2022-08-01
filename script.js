@@ -1,12 +1,9 @@
 "use strict";
-<<<<<<< HEAD
-=======
 
 
 
 const newChanges = 2; // после ребейса для первого пользователя
 console.log('change user2');
->>>>>>> newbranch
 
 
 const car = {
