@@ -1,13 +1,10 @@
 "use strict";
-console.log('change for rebase code');
-let coansole = 'change1';
 
 
 
 
 
-const newChanges = 2; // после ребейса для первого пользователя
-console.log('change user2');
+
 
 
 const car = {
