@@ -1,5 +1,6 @@
 "use strict";
 
+let console = 'change1';
 
 //Пример использования объекта в ООП
 
@@ -11,8 +12,12 @@ console.dir([1, 2, 3,]);
 
 console.log('change user2');
 
+<<<<<<< HEAD
 
 console.log('change second for user 2'); //Изменения вторые для 2=го пользователя
+=======
+const newChanges = 2; // Второй коммит для первого пользователя
+>>>>>>> main
 
 const car = {
 	type: 'sport',
