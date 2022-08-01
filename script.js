@@ -1,5 +1,5 @@
 "use strict";
-console.log('change for rebase code');
+
 let console = 'change1';
 
 //Пример использования объекта в ООП
