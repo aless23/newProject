@@ -1,5 +1,5 @@
 "use strict";
-
+console.log('change for rebase code');
 let console = 'change1';
 
 //Пример использования объекта в ООП
@@ -10,12 +10,10 @@ let strObj = new String (str);
 // console.log(typeof(strObj));
 console.dir([1, 2, 3,]);
 
+
+const newChanges = 2; // Второй коммит для первого пользователя
 console.log('change user2');
 
-console.log('Using rebase!!!');
-
-console.log('change second for user 2'); //Изменения вторые для 2=го пользователя
-const newChanges = 2; // Второй коммит для первого пользователя
 
 const car = {
 	type: 'sport',
