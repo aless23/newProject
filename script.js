@@ -7,6 +7,9 @@
 
 
 
+
+
+
 const car = {
 	type: 'sport',
 	speed: 340,
