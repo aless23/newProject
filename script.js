@@ -1,4 +1,11 @@
 "use strict";
+<<<<<<< HEAD
+=======
+console.log('change for rebase code');
+let console = 'change1';
+
+
+>>>>>>> seconduser
 
 
 
