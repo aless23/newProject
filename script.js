@@ -10,6 +10,9 @@ const newChanges = 2; // после ребейса для первого пол�
 console.log('change user2');
 
 
+
+
+
 const car = {
 	type: 'sport',
 	speed: 340,
