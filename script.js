@@ -1,5 +1,9 @@
 "use strict";
+<<<<<<< HEAD
 console.log('change for rebase code');
+=======
+console.log('change after rebase'); 
+>>>>>>> newbranch
 let console = 'change1';
 
 //Пример использования объекта в ООП
@@ -10,6 +14,7 @@ let strObj = new String (str);
 // console.log(typeof(strObj));
 console.dir([1, 2, 3,]);
 
+console.log('change user2');
 
 const newChanges = 2; // Второй коммит для первого пользователя
 console.log('change user2');
