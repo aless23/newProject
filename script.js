@@ -1,25 +1,13 @@
 "use strict";
-<<<<<<< HEAD
 
 
 console.log('hello rebase');
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 8ed63b4162dc8f885f746407e922a166bc4ca405
-
-=======
->>>>>>> main
 
 
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> main
 
 
 const car = {
@@ -29,6 +17,8 @@ const car = {
 		console.log("Hi, you is cool!!");
 	}
 };
+
+console.log('ch2');
 
 const mazda = Object.create(car);
 // const mazda = {
