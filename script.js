@@ -1,13 +1,20 @@
 "use strict";
+<<<<<<< HEAD
 
 
 console.log('hello rebase');
 
+=======
+>>>>>>> main
 
 
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 
 
 const car = {
