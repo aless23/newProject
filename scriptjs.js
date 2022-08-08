@@ -1,32 +1,33 @@
 "use strict";
 
-const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?');
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?");
 
 let personalMovieDb = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false,
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
 };
 
-if (personalMovieDb.count < 10){
-  console.log('Просмотрено довольно мало фильмов');
-} else if(personalMovieDb.count > 10 < 30 ){
-    console.log('Вы класический зритель');
-} else if (personalMovieDb.count > 30){
-    console.log('Вы киноман');
-} else { console.log('Произошла ошибка!');}
-
+if (personalMovieDb.count < 10) {
+  console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDb.count > 10 < 30) {
+  console.log("Вы класический зритель");
+} else if (personalMovieDb.count > 30) {
+  console.log("Вы киноман");
+} else {
+  console.log("Произошла ошибка!");
+}
 
 // for (let i = 0; i < 2; i++){
 //   let a = prompt ('Один из просмотренных фильмов 1?'),
 //    b = prompt ('На сколько оцените его?'),
-//    if (a != null && b != null && a != '' && b != '' && a.length < 50){ 
-//     personalMovieDb.movies[a] = b; 
+//    if (a != null && b != null && a != '' && b != '' && a.length < 50){
+//     personalMovieDb.movies[a] = b;
 //   }
-//     else{ 
-//     i--; 
+//     else{
+//     i--;
 // }
 // }
 
@@ -47,9 +48,8 @@ console.log(personalMovieDb);
 // function expression: let example = function (){ code }; создаётся только тогда, когда доходит поток кода, можно вызвать только после объявления
 // стрелочные функции: () = > не имеет своего контекста (this)
 
-
 // __________________
-// DOCKER 
+// DOCKER
 // hub.docker.com для поиска необходимого репозитория по теме разработки...
 // docker ps показать список доступных контейнеров (по умолчанию показывает те, которые запущены), если чере параметр -a то все.
 // docker run -it название ПО запуск программы в интерактивном режиме (-it)
@@ -58,10 +58,10 @@ console.log(personalMovieDb);
 // Создаём обязательно в папке с проэктом файлик без расширения Dockerfile
 // FROM название репозитория (языка программирования), который в дальнейшем можно будет запустить (напр. FROM python)
 // COPY копирует все наши файлы проэкта в image, создаёт образ (COPY . означает, что он скопирует всё)
-// После этого, мы указываем место в которое хотим поместить все эти файлы. (COPY . . если вторая . то это значит, что всё 
+// После этого, мы указываем место в которое хотим поместить все эти файлы. (COPY . . если вторая . то это значит, что всё
 // отправится в корень (можно указать/ создать отдельную папку для этого COPY . /app))
 // WORKDIR /app создаёт корневую точку, в папке app
-// CMD ["python", "index.py"] указываем что конкретно запускать 
+// CMD ["python", "index.py"] указываем что конкретно запускать
 // После чего пишем docker build .
 // Далее можем посмотреть image ID, который сгенерировали docker image ls
 // Чтобы запустить образ docker run вписываем id
