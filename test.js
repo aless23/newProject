@@ -1,15 +1,77 @@
-"user strict";
+"use strict";
 
-document.querySelector(".one_btn").onclick = () => {
-  let radioBs = document.querySelectorAll('input[type="radio"]');
-  console.log(radioBs);
+// const knopka = document.querySelector(".bigbtn");
+// knopka.onclick = function () {
+//   this.classList.toggle("three");
+// };
 
-  for (let i = 0; i < radioBs.length; i++) {
-    if (radioBs[i].checked) {
-      console.log(radioBs[i].value);
-    }
-  }
-};
+//HTML 5 требует указывать атрибут data в тегах, чтобы можно было к ним обращаться
+// const paragraph = document.querySelector(".first");
+// console.log(document.querySelector("meta").getAttribute("[name]"));
+
+let typeGas = document.querySelectorAll(".typegas");
+for (let i = 0; i < typeGas.length; i++) {
+  typeGas[i].onclick = function () {
+    let gallons = document.querySelector(".galloFormul").value;
+    let price = this.getAttribute("data");
+    console.log(gallons * price);
+  };
+}
+
+let createElement = document.createElement("div"); // Добавляем элемент на страницу (пример: Div с классом newClass)
+createElement.innerHTML = "hello!";
+createElement.classList.add("newClass");
+console.log(createElement);
+document.querySelector(".reds").appendChild(createElement); // публикуем созданный элемент на странице в указанном месте
+// paragraph.classList.add("one", "two"); // Позволяет подключать css стили (классы), через JS
+
+// let p = 0;
+// let starc = document.querySelector(".out");
+
+// while (p < 4) {
+//   starc.innerHTML += "*";
+//   p++;
+// }
+
+// let butFunc = document.querySelector(".bigBtn");
+
+// function first() {
+//   console.log("hi everyone!!");
+// }
+// first();
+
+// butFunc.onclick = first;
+
+// let knopka = document.querySelector(".bigBtn2");
+
+// knopka.onclick = () => {
+//   console.log("This is arrow function");
+// };
+
+// let outData = document.querySelector(".out");
+// let elem = document.createElement("div");
+
+// for (let i = 0; i < 10; i++) {
+//   let my_div = document.getElementById("first_div");
+//   document.body.insertBefore(elem, my_div);
+// outData.innerHTML = outData.innerHTML + '3*' + i + '=' + (i*3) + '<br>'; идентичная запись ES6 интерполяции
+//outData.innerHTML += "<div style='float:left; width:70px;'>";
+//   for (let k = 0; k < 10; k++) {
+//     elem.innerHTML += `${i} * ${k} = ${i * k}<br>`;
+//   }
+// }
+
+// Проверяет состояние radio кнопки (нажата или нет)
+// document.querySelector(".one_btn").onclick = () => {
+//   let radioBs = document.querySelectorAll('input[type="radio"]');
+//   console.log(radioBs);
+
+//   for (let i = 0; i < radioBs.length; i++) {
+//     if (radioBs[i].checked) {
+//       console.log(radioBs[i].value);
+//     }
+//   }
+// };
 //divVariable.style.background = "green";
 
 // перебирает все заданные элементы, и задаёт для них определённые свойства (пример: добавляем тегу Div зелёный цвет)
