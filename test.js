@@ -1,5 +1,40 @@
 "use strict";
 
+let mas = [1, 0, 0, 0, 0];
+document.querySelector(".out2").innerHTML = mas;
+let f = 0;
+document.querySelector(".massiv").onclick = () => {
+  if (f + 1 < 5) {
+    mas[f] = 0;
+    mas[f + 1] = 1;
+    f++;
+  }
+  document.querySelector(".out2").innerHTML = mas;
+};
+// let a = [1, 2, 3];
+// let b = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+
+//console.log(b);
+
+// let out = "";
+
+// for (let i = 0; i < b.length; i++) {
+//console.log(b[i]);
+//   for (let k = 0; k < b.length; k++) {
+//     console.log(b[i][k]);
+//     if (b[i][k] > 4) {
+//       out += b[i][k] + " ";
+//     }
+//   }
+//   out += "<br>";
+// }
+
+// document.querySelector(".out").innerHTML = out;
+
 // const knopka = document.querySelector(".bigbtn");
 // knopka.onclick = function () {
 //   this.classList.toggle("three");
@@ -9,20 +44,20 @@
 // const paragraph = document.querySelector(".first");
 // console.log(document.querySelector("meta").getAttribute("[name]"));
 
-let typeGas = document.querySelectorAll(".typegas");
-for (let i = 0; i < typeGas.length; i++) {
-  typeGas[i].onclick = function () {
-    let gallons = document.querySelector(".galloFormul").value;
-    let price = this.getAttribute("data");
-    console.log(gallons * price);
-  };
-}
+// let typeGas = document.querySelectorAll(".typegas");
+// for (let i = 0; i < typeGas.length; i++) {
+//   typeGas[i].onclick = function () {
+//     let gallons = document.querySelector(".galloFormul").value;
+//     let price = this.getAttribute("data");
+//     console.log(gallons * price);
+//   };
+// }
 
-let createElement = document.createElement("div"); // Добавляем элемент на страницу (пример: Div с классом newClass)
-createElement.innerHTML = "hello!";
-createElement.classList.add("newClass");
-console.log(createElement);
-document.querySelector(".reds").appendChild(createElement); // публикуем созданный элемент на странице в указанном месте
+// let createElement = document.createElement("div"); // Добавляем элемент на страницу (пример: Div с классом newClass)
+// createElement.innerHTML = "hello!";
+// createElement.classList.add("newClass");
+// console.log(createElement);
+// document.querySelector(".reds").appendChild(createElement); // публикуем созданный элемент на странице в указанном месте
 // paragraph.classList.add("one", "two"); // Позволяет подключать css стили (классы), через JS
 
 // let p = 0;
