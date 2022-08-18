@@ -1,16 +1,31 @@
 "use strict";
 
-let mas = [1, 0, 0, 0, 0];
-document.querySelector(".out2").innerHTML = mas;
-let f = 0;
-document.querySelector(".massiv").onclick = () => {
-  if (f + 1 < 5) {
-    mas[f] = 0;
-    mas[f + 1] = 1;
-    f++;
-  }
-  document.querySelector(".out2").innerHTML = mas;
+let a = {
+  hum: 5,
+  time: "yes",
+  "space control": 54,
 };
+console.log(a["space control"]);
+
+let out = "";
+
+for (let key in a) {
+  out += key + "---" + a[key] + "<br>";
+}
+
+document.querySelector(".out2").innerHTML = out;
+
+// let mas = [1, 0, 0, 0, 0];
+// document.querySelector(".out2").innerHTML = mas;
+// let f = 0;
+// document.querySelector(".massiv").onclick = () => {
+//   if (f + 1 < 5) {
+//     mas[f] = 0;
+//     mas[f + 1] = 1;
+//     f++;
+//   }
+//   document.querySelector(".out2").innerHTML = mas;
+// };
 // let a = [1, 2, 3];
 // let b = [
 //   [1, 2, 3],
