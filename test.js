@@ -1,19 +1,38 @@
 "use strict";
 
-let a = {
-  hum: 5,
-  time: "yes",
-  "space control": 54,
-};
-console.log(a["space control"]);
+let a = new Set();
 
-let out = "";
+a.add("h");
+a.add("b");
+a.add("o");
+a.add("h");
 
-for (let key in a) {
-  out += key + "---" + a[key] + "<br>";
-}
+console.log(a);
 
-document.querySelector(".out2").innerHTML = out;
+// a.add(4);
+// a.add(23);
+// a.add("string first");
+// console.log(a);
+// console.log(a[0]);
+// console.log(a.length);
+// for (let item of a) {
+//   console.log(item);
+// }
+
+// let a = {
+//   hum: 5,
+//   time: "yes",
+//   "space control": 54,
+// };
+// console.log(a["space control"]);
+
+// let out = "";
+
+// for (let key in a) {
+//   out += key + "---" + a[key] + "<br>";
+// }
+
+// document.querySelector(".out2").innerHTML = out;
 
 // let mas = [1, 0, 0, 0, 0];
 // document.querySelector(".out2").innerHTML = mas;
