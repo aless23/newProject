@@ -1,13 +1,70 @@
 "use strict";
 
-let a = new Set();
+let b = [1, 2, 3, 4, 5];
 
-a.add("h");
-a.add("b");
-a.add("o");
-a.add("h");
+let b_res = b.forEach(function (item) {
+  return item;
+});
 
-console.log(a);
+console.log(b_res);
+
+// let a = "hello, hi, goodmorning";
+// console.log(a.split(","));
+// Если в документации указан аргумент в квадратных скобках, то его писать не обязательно
+
+// let a1 = [4, 5, 6, 7, 12, 34, 56, 78, 90, 11];
+
+// let a1_res = a1.map(function (item) {
+//   item *= 2;
+//   return item;
+// });
+
+// console.log(`Массив ${a1} умноженный на 2 будет выглядеть так: ${a1_res}`);
+// console.log(a1_res);
+
+// let arr = [1, 400, 12, 0, 11, -2];
+// let result = arr.map(function (item, index) {
+//   console.log(item);
+// эта функция будет применяться к каждому элементу массива
+//   return item;
+// });
+
+// console.log(result);
+
+// let arr = [1, 5, 7, 9, 11];
+// let knopka = document.querySelector(".solveClick");
+// let cykl = document.querySelector(".outData");
+// function resCount() {
+//   for (let i = 0; i < arr.length; i++) {
+//     cykl.innerHTML += arr[i] + " ";
+//   }
+// }
+
+// knopka.onclick = resCount;
+
+// function first() {
+//   console.log("hi everyone!!");
+// }
+// first();
+
+// butFunc.onclick = first;
+
+// for (let i = 0; i < divens.length; i++) {
+//   console.log(divens[i]);
+// }
+
+// способ №1
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+// способ №2
+// for (let key in arr) {
+//   console.log(arr[key]);
+// }
+//способ № 3
+// for (let key of arr) {
+//   console.log(arr[key]);
+// }
 
 // a.add(4);
 // a.add(23);
