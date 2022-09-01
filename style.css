@@ -1,13 +1,25 @@
-.three {
-    background-color: aqua;
+/* .center{
+    width:200px;
+    height:100px;
+    margin:0 auto;
+} */
+.div-1 {
+    width: 80px;
+    height:80px;
+    border: solid 1px black;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3px;
 }
-.galloFormul {
-    margin-bottom: 5px;
+.strelka{
+    margin: 5px 5px;
 }
 
-.forButton {
-    margin: 15px 0px 0px 0px;
+.container {
+    display: block;
 }
-.solveClick {
-    
+.i-1 {
+display:block;
+margin:0 auto;
 }

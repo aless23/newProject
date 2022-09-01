@@ -1,12 +1,8 @@
 "use strict";
 
-let b = [1, 2, 3, 4, 5];
-
-let b_res = b.forEach(function (item) {
-  return item;
-});
-
-console.log(b_res);
+document.querySelector(".i-1").onkeypress = (event) => {
+  console.log(event);
+};
 
 // let a = "hello, hi, goodmorning";
 // console.log(a.split(","));
