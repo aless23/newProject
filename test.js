@@ -1,8 +1,21 @@
 "use strict";
 
-document.querySelector(".i-1").onkeypress = (event) => {
+document.querySelector(".div-1").addEventListener("touchstart", myTouchs);
+document.querySelector(".div-1").addEventListener("touchend", myTouchEnd);
+
+function myTouchs(event) {
   console.log(event);
-};
+  console.log("touch");
+  document.querySelector(".outres").innerHTML += "its work ";
+}
+
+function myTouchEnd() {
+  document.querySelector(".outres2").innerHTML += " endCs";
+}
+
+// document.querySelector(".i-1").onkeypress = (event) => {
+//   console.log(event);
+// };
 
 // let a = "hello, hi, goodmorning";
 // console.log(a.split(","));

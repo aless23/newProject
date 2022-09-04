@@ -4,9 +4,9 @@
     margin:0 auto;
 } */
 .div-1 {
-    width: 80px;
-    height:80px;
-    border: solid 1px black;
+    width: 350px;
+    height:350px;
+    border: solid 1px red;
     display: block;
     margin: 0 auto;
     text-align: center;
