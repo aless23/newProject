@@ -1,15 +1,24 @@
 "use strict";
 
-let a = 5;
-a = a * 2;
+// localStorage.setItem("myAge", 23);
+// console.log(localStorage.getItem("myAge"));
 
-try {
-  document.querySelector(".test").innerHTML = a; // если был не правильный код, его можно поместить в блок try catch
-} catch (err) {
-  console.log(err);
-  console.log("1");
-}
-console.log(a);
+let a = [1, 2, 3];
+localStorage.setItem("myArr", JSON.stringify(a)); // преобразование значений в строку (string) JSON
+let b = localStorage.getIt; // разбирает строку, с возможным дальнейшим преобразованием в type (Object)
+console.log(b);
+console.log(b[1]);
+
+// let a = 5;
+// a = a * 2;
+
+// try {
+//   document.querySelector(".test").innerHTML = a; // если был не правильный код, его можно поместить в блок try catch
+// } catch (err) {
+//   console.log(err);
+//   console.log("1");
+// }
+// console.log(a);
 
 // document.querySelector(".div-1").addEventListener("touchstart", myTouchs);
 // document.querySelector(".div-1").addEventListener("touchend", myTouchEnd);
