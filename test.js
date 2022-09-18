@@ -1,13 +1,27 @@
 "use strict";
 
+let nameAjax = XMLHttpRequest();
+nameAjax.onereadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    myFunction(this.responseText);
+  }
+};
+
+nameAjax.open("GET", "http://google.com", true);
+nameAjax.send();
+
+function myFunction(datas) {
+  console.log(datas);
+}
+
 // localStorage.setItem("myAge", 23);
 // console.log(localStorage.getItem("myAge"));
 
-let a = [1, 2, 3];
-localStorage.setItem("myArr", JSON.stringify(a)); // преобразование значений в строку (string) JSON
-let b = localStorage.getIt; // разбирает строку, с возможным дальнейшим преобразованием в type (Object)
-console.log(b);
-console.log(b[1]);
+// let a = [1, 2, 3];
+// localStorage.setItem("myArr", JSON.stringify(a)); // преобразование значений в строку (string) JSON
+// let b = localStorage.getIt; // разбирает строку, с возможным дальнейшим преобразованием в type (Object)
+// console.log(b);
+// console.log(b[1]);
 
 // let a = 5;
 // a = a * 2;
