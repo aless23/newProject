@@ -1,14 +1,14 @@
 "use strict";
 
-let nameAjax = XMLHttpRequest();
-nameAjax.onereadystatechange = function () {
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
     myFunction(this.responseText);
   }
 };
 
-nameAjax.open("GET", "http://google.com", true);
-nameAjax.send();
+xhttp.open("GET", "http://getpost.itgid.info/index2.php", true);
+xhttp.send();
 
 function myFunction(datas) {
   console.log(datas);
